@@ -1,0 +1,295 @@
+#container-adaugare{
+    position: relative;
+    top: 50%;
+    transform: translate(0%,-50%);
+    display: grid;
+    grid-template-columns: 380px calc(calc(100% - 20px) - 380px);
+    max-width: 1761px;
+}
+
+.numar-inmatriculare{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+}
+
+.numar-inmatriculare div{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.numar-inmatriculare input,
+#numar-intreg-editabil input{
+    border-radius: 0px;
+    border: 1px solid gray;
+    width: 100%;
+    text-align: center;
+    grid-row: 2/3;
+    text-transform: uppercase;
+}
+
+.numar-inmatriculare input:focus,
+#numar-intreg-editabil input:focus{
+    outline: none;
+}
+
+.numar-inmatriculare input:nth-of-type(1),
+#numar-intreg-editabil input:nth-of-type(1){
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none!important;
+    grid-column: 1/2;
+}
+
+.numar-inmatriculare input:nth-of-type(2),
+#numar-intreg-editabil input:nth-of-type(2){
+    border-right: none!important;
+    border-left: none!important;
+    grid-column: 2/3;
+}
+
+.numar-inmatriculare input:nth-of-type(3),
+#numar-intreg-editabil input:nth-of-type(3){
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    grid-column: 3/4;
+    border-left: none!important;
+}
+
+#pretul,
+#vigneta,
+#ulei-km,
+#numar-km,
+#tip-transport,
+#vechime-masina, 
+#inspectia, 
+#asigurare, 
+#categorie-vehicule{
+    width: 100%;
+}
+
+#categorie-vehicule:focus{
+    outline: none;
+}
+
+#vehicul-date{
+    display: grid;
+    grid-gap: 10px;
+    background-color: white;
+    width: calc(100% - 50px);
+    overflow: auto;
+    height: 500px;
+    box-shadow: 0px 0px 3px gray;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+#table-vehicule{
+    background-color: white;
+    width: calc(100% - 50px);
+    overflow: auto;
+    height: 500px;
+    box-shadow: 0px 0px 3px gray;
+    border-radius: 5px;
+    padding: 20px;
+    padding-left: 50px;
+    display: grid;
+    grid-template-rows: 30px calc(100% - 30px);
+}
+
+.celula{
+    text-transform: uppercase;
+    width: 130px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid black;
+    border-left: none;
+    line-height: 30px;
+}
+
+.spatiu-gol{    
+    border: 1px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    width: 30px;
+    line-height: 30px;
+}
+
+.celula:nth-of-type(1){
+    border-left: 1px solid black;
+}
+
+.vehicul{
+    display: flex;
+}
+
+#continut-tabel{
+    overflow: auto;
+    height: 100%;
+}
+
+.vehicul div{
+    text-transform: uppercase;
+    width: 130px;
+    text-align: center;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    line-height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+.vehicul div::selection{
+    background: transparent;
+}
+
+.editare{
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60, 57, 57, 0.75);
+    color: white;
+    transform: translate(-50%, -50%);
+    text-align: right;
+}
+
+.editare:hover{
+    opacity: 1;
+}
+
+.vehicul div:nth-of-type(1){
+    border-left: 1px solid black;
+}
+
+#cap-tabel{
+    font-weight: 900;
+    display: flex;
+    background-color: #152143;
+    color: white;
+}
+
+form label{
+    width: 260px!important;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+}
+
+
+/* Chrome, Safari, Edge */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    text-align: center;
+}
+
+/* Firefox */
+input[type=number] {
+    text-align: center;
+}
+
+.marker{
+    background-color: rgb(216, 216, 255);
+}
+
+#panou-editare{
+    position: absolute;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    background-color: rgba(0, 0, 0, 0.733);
+    top: 60px;
+    left: 60px;
+}
+
+#panel-input{
+    display: grid;
+    grid-gap: 10px;
+    background-color: white;
+    overflow: auto;
+    box-shadow: 0px 0px 3px gray;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.close-button{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 30px;
+    padding: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    background: red;
+}
+
+.numar-editare{
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+#panel-input .default-label select,
+#panel-input .default-label input{
+    margin-top: 5px;
+}
+
+#panel-input button{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.delete-buton{
+    position: absolute!important;
+    width: 20px!important;
+    height: 20px!important;
+    left: 0px;
+    border: none!important;
+    color: red;
+}
+
+#delete-vehicul{
+    position: absolute;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.org-butons{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+.org-butons div{
+    text-align: center;
+    cursor: pointer;
+}
+
+.close-close{
+    font-weight: 900;
+    color: rgb(23, 151, 6);
+    border: 1px solid rgb(23, 151, 6);
+}
+
+.sterge-sterge{
+    font-weight: 900;
+    color: rgb(151, 6, 6);
+    border: 1px solid rgb(151, 6, 6);
+}

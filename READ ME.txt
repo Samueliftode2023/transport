@@ -1,0 +1,36 @@
+Transport Management System
+
+    A web-based transport management application built using PHP, MySQL, JavaScript, HTML, and CSS.
+
+Overview
+
+    This application is designed to manage transportation records 
+    efficiently by allowing authenticated users to create, update, view, and delete transport-related data.
+
+    It provides an administrative interface for organizing logistics information in a structured way.
+
+Features
+
+    User Authentication System
+
+    Transport Record Management
+
+    Add / Edit / Delete Entries
+
+    Database Integration
+
+    Admin Interface
+
+    Modular Backend Logic
+
+    🛠 Technologies Used
+
+    PHP
+
+    MySQL
+
+    JavaScript
+
+    HTML5
+
+    CSS3
